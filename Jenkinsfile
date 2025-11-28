@@ -21,9 +21,9 @@ pipeline {
                     echo "Déploiement dans C:/deploy-site/site"
                 }
                 bat """
-                cd C:\\deploy-site\\site
-                git pull
-                git config --global --add safe.directory
+                    git config --global --add safe.directory C:/deploy-site/site
+                    cd C:/deploy-site/site
+                    git pull
                 """
             }
         }
