@@ -23,6 +23,7 @@ pipeline {
                 bat """
                 cd C:\\deploy-site\\site
                 git pull
+                git config --global --add safe.directory
                 """
             }
         }
